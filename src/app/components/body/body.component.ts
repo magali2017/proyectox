@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
+  mostrar = true;
+  opciones  :any = {
+    opcion:'PARQUEOS EVENTUALES'
 
-  constructor() { }
+  };
+  placas: string[] =['4333-ABN','7655-PER','1422-CVD'] ;
+  hoy: any;
+  constructor() {
+    this.hoy = new Date().toLocaleString()
+   }
 
   ngOnInit() {
   }
 
-}
+};
